@@ -131,7 +131,7 @@ extension NotesViewController //เพิ่มความยืดหยุ่
     override func tableView(tableView: UITableView,  //เป็นฟังชันที่ใช้ในการเข้าถึง, indexPath คือ ตำแหน่งของแถวที่วน
         cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
-        let cell = tableView.dequeueReusableCellWithIdentifier("NoteCell", forIndexPath: indexPath) as! NoteTableViewCell //as! คือ ไม่อยากเช็คเรียกค่าเรย คล้ายๆการ unwrep
+        let cell = tableView.dequeueReusableCellWithIdentifier("Prototype Cells", forIndexPath: indexPath) as! NoteTableViewCell //as! คือ ไม่อยากเช็คเรียกค่าเรย คล้ายๆการ unwrep
         
         //cell.textLabel?.text = "Hello World"
         //การแสดงข้อมูลต้องรู้ indexPath
