@@ -55,12 +55,12 @@ class NotesViewController: UITableViewController {
     
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if(segue.identifier == "ShowNote"){
+        if(segue.identifier == "ShowExistingNote"){
         let noteDisplay = segue.destinationViewController  as! NoteDisplayViewController
         noteDisplay.note = SelectedNote
         }
     }
-    
+    //แก้ไข้ในการบอก identifier ที่ผิดผลาด
     @IBAction func unwindToSegue(segue: UIStoryboardSegue) { //segue คือข้อมูลที่มันจะส่งมา
         if let id=segue.identifier{
            //print("Identifier \(id)")
